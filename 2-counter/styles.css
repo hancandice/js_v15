@@ -151,55 +151,40 @@ main {
   place-items: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
+/*
+=============== 
+Counter
+===============
+*/
 
-.btn-hero {
-  font-family: var(--ff-primary);
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+}
+#value {
+  font-size: 6rem;
+  font-weight: bold;
+}
+.btn {
   text-transform: uppercase;
   background: transparent;
   color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
-  font-weight: 700;
   transition: var(--transition);
+  font-size: 0.875rem;
   border: 2px solid var(--clr-black);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
-  font-size: 1rem;
-  padding: 0.75rem 1.25rem;
+  margin: 0.5rem;
 }
-.btn-hero:hover {
+.btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
-}
-
-button {
-  margin: 1rem 0;
-  width: 20rem;
-}
-
-.title {
-  opacity: 0.6;
-  position: sticky;
-  background-color: #2c2c2c;
-  z-index: -1;
-  bottom: 40vh;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title .letter {
-  color: #f0db51;
-  font-size: 4rem;
-  font-weight: 800;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
