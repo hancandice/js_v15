@@ -150,3 +150,55 @@ main {
   display: grid;
   place-items: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-hero {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+.btn-hero:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.title {
+  opacity: 0.6;
+  position: sticky;
+  background-color: #2c2c2c;
+  z-index: -1;
+  bottom: 40vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title .letter {
+  color: #f0db51;
+  font-size: 4rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
