@@ -136,6 +136,9 @@ p {
     line-height: 1;
   }
 }
+button:focus {
+  outline: none;
+}
 /*  global classes */
 
 .btn {
