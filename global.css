@@ -162,20 +162,20 @@ Home Page
  */
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-gap: 10px;
 }
 
-.btn-hero {
+.container a .btn-hero {
   font-family: var(--ff-primary);
   text-transform: uppercase;
-  background: transparent;
-  color: var(--clr-red-light);
+  background-color: #444;
+  color: #fff;
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
   transition: var(--transition);
-  border: 2px solid var(--clr-red-light);
+  border: 2px solid var(--clr-black);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
@@ -184,7 +184,13 @@ Home Page
   margin: 1rem 0;
   width: 20rem;
 }
-.btn-hero:hover {
+
+.container a:nth-child(2n) .btn-hero {
+  background-color: #ccc;
+  color: #000;
+}
+
+.container a .btn-hero:hover {
   color: var(--clr-white);
   background: var(--clr-red-light);
 }
