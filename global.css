@@ -193,4 +193,5 @@ Home Page
 .container a .btn-hero:hover {
   color: var(--clr-white);
   background: var(--clr-red-light);
+  border: 2px solid var(--clr-red-light);
 }
