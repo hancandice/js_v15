@@ -12,3 +12,7 @@ Or there is a fallback folder in the root
 <br  />
 
 (HTML&CSS Video) [www.johnsmilga.com]
+
+
+
+https://15vanillajs.netlify.app/
